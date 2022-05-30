@@ -127,8 +127,6 @@ const EmployeeContextProvider = (props) => {
   const totalPageNum = Math.ceil(employees.length / employeesPerPage);
   const [currentButton, setCurrentButton] = useState(1);
 
-  console.log("currentEmployee.length =", currentEmployee.length);
-
   const addNewEmployee = (newEmployee) => {
     setEmployees([...employees, { id: uuidv4(), ...newEmployee }]);
   };
